@@ -8,9 +8,7 @@ def is_prime(n):
     """
     Test if ``n`` is a prime.
     """
-    ryfgtujrfhujrehikerh
-    fgdrjfhrkwfhkrw
-    returndfhjsdfhfsdkj
+
 # Tests
 # is_prime(2033) == False
 # is_prime(2039) == True
