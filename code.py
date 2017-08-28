@@ -1,20 +1,31 @@
 # Create a list with the first ten triangular numbers
 # (see https://oeis.org/A000217)
+def all_triangle_numbers(n):
+    for i in range(1, n+1):   
+        print("n = {0}, triangle = {1}".format(i, (i ** 2 + i)//2))
 
+all_triangle_numbers(10) 
 L = [ for i in range(10)]
 
 # Create a function to test if a number is prime
-def is_prime(n):
-    """
-    Test if ``n`` is a prime.
-    """
+# take input from the user
+num = int(input("Enter a number: "))
 
-# Tests
-# is_prime(2033) == False
-# is_prime(2039) == True
-
-# Create a function which returns a list of the first ten prime numbers
-# greater than or equal to n
+# prime numbers are greater than 1
+if num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
 
 def next_ten_primes(n):
     """
